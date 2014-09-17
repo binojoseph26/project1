@@ -1,0 +1,470 @@
+<html>
+<head>
+	<meta charset="utf-8">
+  
+	
+	
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+	<link href="css/button.css" rel="stylesheet">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="templatemo_style.css" rel="stylesheet" type="text/css" />
+<!--=====================================================================================================-->
+
+<style type="text/css">
+#carousel {
+			
+        width: 1000px;
+        height: 400px;
+        overflow:hidden;
+    }
+
+    #carousel ul {
+        width: 2000px;
+        padding: 0;
+        margin: 0;
+    }
+
+    #carousel ul li {
+        width:1000px;
+        text-align: center;
+        height: 400px;
+        list-style: none;
+        float:  left;
+    }
+   .a
+   {
+		position: fixed;
+		top: 190px;
+		left: 170px;  
+   }
+   
+    
+#footer1
+{
+	
+	width: 100%; 
+}
+.container {
+  
+  max-width: 680px;
+  padding: 0 15px;
+}
+.container .text-muted {
+  margin: 20px 0;
+}
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js" type="text/javascript"><!--mce:0--></script>
+<script type="text/javascript">
+  	$(document).ready(function(){
+
+		$("#carousel ul").each(function(){
+			// Set the interval to be 10 seconds
+			var t = setInterval(function(){
+				$("#carousel ul").animate({marginLeft:-1000},1000,function(){
+					// This code runs after the animation completes
+					$(this).find("li:last").after($(this).find("li:first"));
+					// Now we've taken out the left-most list item, reset the margin
+					$(this).css({marginLeft:0});
+				})
+			},4000);
+		});
+	});
+  </script>
+<!--=====================================================================================================-->
+<script>
+function myFunction0()
+{
+	
+	var x = document.getElementById("destination_to");
+ 
+	var option = document.createElement("option");
+          option.text = "Mahabaleshwar";
+          x.add(option, x.options[null]);
+
+var option = document.createElement("option");
+          option.text = "Matheran";
+          x.add(option, x.options[null]);
+
+var option = document.createElement("option");
+          option.text = "Lonavala";
+          x.add(option, x.options[null]);
+}
+function myFunction1()
+{
+	
+	var x = document.getElementById("destination_to");
+ 
+	var option = document.createElement("option");
+          option.text = "Sinhagad";
+          x.add(option, x.options[null]);
+
+	var option = document.createElement("option");
+          option.text = "Raigad";
+          x.add(option, x.options[null]);
+
+	var option = document.createElement("option");
+          option.text = "Panhala";
+          x.add(option, x.options[null]);
+}
+function myFunction2()
+{
+	
+	var x = document.getElementById("destination_to");
+ 
+	var option = document.createElement("option");
+          option.text = "Alibag";
+          x.add(option, x.options[null]);
+
+	var option = document.createElement("option");
+          option.text = "Ganpatipule";
+          x.add(option, x.options[null]);
+
+	var option = document.createElement("option");
+          option.text = "Harihareshwar";
+          x.add(option, x.options[null]);
+}
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+  
+<script>  
+
+function initialize() {
+info();
+document.getElementById('infobck').innerHTML = "";
+document.getElementById('write').innerHTML = "";
+
+var x = document.getElementById("destination_to").selectedIndex;
+var y = document.getElementById("destination_to").options;
+
+switch (y[x].text)
+  {
+  case "Lonavala":
+    var lat=18.7481;
+    var long=73.4042;
+
+document.getElementById('write').innerHTML += 
+'<font color="green" size="6">Lonavala-Khandala</font><br><br><ul><li><font color="green">Location</font><br>Khandala and Lonavala lie 5 km, apart, on the western slopes of the Sahyadris, straddling the Mumbai-Pune highway at an altitude of 625 m. Karla is 8 km. from Lonavala.</li><li><font color="green">Modes of Transport</font><br>Lonavala is reachable by road and railway. MSRTC as well as private buses ply from Pune and Mumbai daily. Cabs are also available.<br><i>Nearest Railway Station: The convenient railhead is Lonavala, on the Mumbai-Pune line (118 km from Mumbai) (64kms from Pune).</i><br><i>Nearest Airport: Lohgaon Airport Pune (66kms)</i></li><li><font color="green">Climate</font><br>Temperatures vary from 12° C in winter to around 36<sup>o</sup> C at the height of summer.  The annual rainfall averages 450 cms. October-May is the best time of visit</li></ul>';
+
+var img1 = document.createElement('img');
+img1.src = 'lon.jpg';
+img1.style.height = '300px';
+img1.style.width = '1300px';
+img1.style.position = 'relative';
+img1.style.top = '25px';
+img1.style.left = '25px';
+document.getElementById('infobck').appendChild(img1)
+
+    break;
+
+  case "Matheran":
+    var lat=18.9866;
+    var long=73.2679;
+
+document.getElementById('write').innerHTML += 
+'<font color="green" size="6">Matheran</font><br><br><ul><li><font color="green">Location</font><br>Sprawling languidly at an altitude of 800 metres is Matheran - an undulating hilltop cloaked in green, in Raigad District of Maharashtra State, in India.</li><li><font color="green">Modes of Transport</font><br>Matheran is reachable by road as well as by a toy train. Cabs are also available.<br><i>Railway Staion: Pune-Neral, 120 kms. (Neral-Matheran mountain train)</i><br><i>Nearest Airport: CST Airport Mumbai(100 kms)</i></li><li><font color="green">Climate</font><br>Temperatures vary from 16 C in winter to 32 C in summer, with an annual rainfall of 524 cms. October to May is the best time to visit.</li></ul>';
+
+var img1 = document.createElement('img');
+img1.src = 'mat.jpg';
+img1.style.height = '300px';
+img1.style.width = '1300px';
+img1.style.position = 'relative';
+img1.style.top = '25px';
+img1.style.left = '25px';
+document.getElementById('infobck').appendChild(img1)
+
+    break;
+
+  case "Mahabaleshwar":
+    var lat=17.9217;
+    var long=73.6556;
+
+document.getElementById('write').innerHTML += 
+'<font color="green" size="6">Mahabaleshwar</font><br><br><ul><li><font color="green">Location</font><br>Mahabaleshwar is situated 1,372 meters above sea level in the Western Ghats, in Satara District of Maharashtra State, in India.</li><li><font color="green">Modes of Transport</font><br>Mahabaleshwar is reachable by road. MSRTC as well as private buses ply from Pune and Mumbai daily. Cabs are also available.<br><i>Nearest Railway Station: Pune (120kms)</i><br><i>Nearest Airport: Lohgaon Airport Pune (125kms)</i></li><li><font color="green">Climate and clothing</font><br>The climate is pleasant throughout the year, but the best time to visit is between October and June.  Temperatures range from 16 C to 20 C in summer and can fall as low as 5 C in winter.   Cottons and light woolens are recommended attire.</li></ul>';
+
+var img1 = document.createElement('img');
+img1.src = 'maha2.jpg';
+img1.style.height = '300px';
+img1.style.width = '1300px';
+img1.style.position = 'relative';
+img1.style.top = '25px';
+img1.style.left = '25px';
+document.getElementById('infobck').appendChild(img1)
+
+    break;
+
+  case "Panhala":
+    var lat=16.8200;
+    var long=74.1200;
+
+document.getElementById('write').innerHTML += 
+'<font color="green" size="6">Panhala</font><br><br><ul><li><font color="green">Location</font><br>Panhala lies on the Sahyadri Mountain Range and is situated in the Kolhapur district of Maharashtra. It is about 22 km to the northwest of Kolhapur on the Kolhapur-Ratnagiri road and is at an altitude of 3177 feet above sea level.</li><li><font color="green">Modes of Transport</font><br>Panhala is well connected to all cities in Maharashtra. The distance from Panhala to Pune is 200 km and to Nasik is 450 km. State transport buses ply between Kolhapur and Panhala every 2 hours during the day. Cabs are also available.<br><i>Nearest Railway Station: Kolhapur (22kms)</i><br><i>Nearest Airport: Kolhapur (25kms)</i></li><li><font color="green">Climate and clothing</font><br>Panhala is an enchanting and peaceful place which offers a pollution free atmosphere. The climate is pleasant throughout the year, but the best time to visit is between October and June. This sight is lost to mist for almost six months a year. Cottons and light woolens are recommended attire.</li></ul>';
+
+var img1 = document.createElement('img');
+img1.src = 'pan.jpg';
+img1.style.height = '300px';
+img1.style.width = '1300px';
+img1.style.position = 'relative';
+img1.style.top = '25px';
+img1.style.left = '25px';
+document.getElementById('infobck').appendChild(img1)
+
+    break;
+
+  case "Ganpatipule":
+    var lat=17.1448;
+    var long=73.2666;
+
+document.getElementById('write').innerHTML += 
+'<font color="green" size="6">Ganpatipule</font><br><br><ul><li><font color="green">Location</font><br>Ganapatipule is approximately 375 km south of Mumbai, along the Konkan Coast.</li><li><font color="green">Modes of Transport</font><br>Ganpatipule is reachable by road. MSRTC as well as private buses ply from Pune and Mumbai daily. Cabs are also available.<br><i>Nearest Railway Station: Ratnagiri (24kms) on konkan rly</i><br><i>Nearest Airport: Kolhapur (153kms)</i></li><li><font color="green">Climate and clothing</font><br>The climate is moist and humid but the air is invigorating and free of pollution.  From March, the temperature starts rising but rarely crosses 380 C.  May is the hottest month.  The monsoon lasts from June to October.  Rains are usually plentiful and regular.  The winter season is perhaps the most pleasant with temperatures dropping at nights.  Loose cottons and light woolens during winter nights are recommended.  Dont forget to carry your swim wear.</li></ul>';
+
+var img1 = document.createElement('img');
+img1.src = 'gan.jpg';
+img1.style.height = '300px';
+img1.style.width = '1300px';
+img1.style.position = 'relative';
+img1.style.top = '25px';
+img1.style.left = '25px';
+document.getElementById('infobck').appendChild(img1)
+
+    break;
+  
+case "Alibag":
+    
+var lat=18.6400;
+var long=72.8800;
+
+document.getElementById('write').innerHTML += 
+'<font color="green" size="6">Alibag</font><br><br><ul><li><font color="green">Location</font><br>Alibag is located about 100 km south of Mumbai. The average elevation is 0 metres.</li><li><font color="green">Modes of Transport</font><br>Alibag is reachable by road. MSRTC as well as private buses ply from Mumbai daily. Cabs are also available.<br><i>Nearest Railway Station: Pen (31kms)</i><br><i>Nearest Airport: CS International Airport Mumbai (104kms)</i></li><li><font color="green">Climate and clothing</font><br>The climate is pleasant throughout the year, but the best time to visit is between October and June.  Temperatures range from 20 C to 35 C throughout the year.   Cottons and light woolens are recommended attire.</li></ul>';
+
+var img = document.createElement('img');
+img.src = 'janjira.jpg';
+img.style.height = '300px';
+img.style.width = '1300px';
+img.style.position = 'relative';
+img.style.top = '25px';
+img.style.left = '25px';
+document.getElementById('infobck').appendChild(img)
+
+break;
+
+  case "Harihareshwar":
+    var lat=17.9937;
+    var long=73.0257;
+
+document.getElementById('write').innerHTML += 
+'<font color="green" size="6">Harihareshwar</font><br><br><ul><li><font color="green">Location</font><br> Harihareshwar, known for its tranquil and picturesque beach and the Shiva temple is located at about 140 kms from Pune off the konkan coast.</li><li><font color="green">Modes of Transport</font><br>Harihareshwar is reachable by road. MSRTC buses ply from Pune and Mumbai daily. Cabs are also available.<br><i>Nearest Railway Station: Mangaon (65kms) on konkan rly</i><br><i>Nearest Airport: CS International Mumbai (215kms)</i></li><li><font color="green">Climate and clothing</font><br>Harihareshwar has a temperate climate with warm summer, humid rainy season and cool winter. Maximum temperature observed during the summer season (March-May) is about 40 C and minimum temperature during winter (December – February) is around 16 C. Best season to visit is October to March.</li></ul>';
+
+var img1 = document.createElement('img');
+img1.src = 'har.jpg';
+img1.style.height = '300px';
+img1.style.width = '1300px';
+img1.style.position = 'relative';
+img1.style.top = '25px';
+img1.style.left = '25px';
+document.getElementById('infobck').appendChild(img1)
+
+    break;
+  
+case "Sinhagad":
+    var lat=18.3663;
+    var long=73.7558;
+
+document.getElementById('write').innerHTML += 
+'<font color="green" size="6">Sinhagad</font><br><br><ul><li><font color="green">Location</font><br>Sinhagad, Sinhgarh, or Sinhgad ( The Lions Fort), is a fortress located roughly 30 kilometres southwest of the city of Pune, India.</li><li><font color="green">Modes of Transport</font><br>The fort is reachable only by road. Local city bus Pune plies from Pune, twice daily. Cabs are also available from the city.<br><i>Nearest Railway Station: Pune (38kms)</i><br><i>Nearest Airport: Lohgaon Airport Pune (45kms)</i></li><li><font color="green">Climate</font><br>The climate is pleasant throughout the year, but the best time to visit is between October and March. Temperatures range from 20 C to 35 C in summer and can fall upto 10 C in winter. </li></ul>';
+
+var img1 = document.createElement('img');
+img1.src = 'sin.jpg';
+img1.style.height = '300px';
+img1.style.width = '1300px';
+img1.style.position = 'relative';
+img1.style.top = '25px';
+img1.style.left = '25px';
+document.getElementById('infobck').appendChild(img1)
+
+    break;
+
+ case "Raigad":
+    var lat=18.2349;
+    var long=73.4477;
+
+document.getElementById('write').innerHTML += 
+'<font color="green" size="6">Raigad</font><br><br><ul><li><font color="green">Location</font><br>Raigad fort, which rises 820 metres (2,700 ft) above sea level, is located in the Sahyadri mountain range, 79kms to the east of Raigad district.</li><li><font color="green">Modes of Transport</font><br>Raigad fort is reachable by road. MSRTC buses ply from Pune to Raigad fort daily. Cabs are also available. Rope-way facility has been developed to the fort from the foothills.<br><i>Nearest Railway Station: Mahad (29kms)</i><br><i>Nearest Airport: Lohgaon Airport Pune (129kms)</i></li><li><font color="green">Climate and clothing</font><br>The climate is a bit harsh in rainy season. The best time to visit is between October and March.  Temperatures ranges from 20 C to 32 C in summer and can fall as low as 10 C in winter.   Cottons and light woolens are recommended attire. Raincoats are must in rainy season.</li></ul>';
+
+var img1 = document.createElement('img');
+img1.src = 'rai.jpg';
+img1.style.height = '300px';
+img1.style.width = '1300px';
+img1.style.position = 'relative';
+img1.style.top = '25px';
+img1.style.left = '25px';
+document.getElementById('infobck').appendChild(img1)
+
+    break;
+  }
+
+
+  var myLatlng = new google.maps.LatLng(lat,long);
+  var mapOptions = {
+    zoom: 10,
+    center: myLatlng
+  }
+  var map = new google.maps.Map(document.getElementById('map_canvas'), mapOptions);
+
+  var marker = new google.maps.Marker({
+      position: myLatlng,
+      map: map,
+      title: 'Hello World!'
+  });
+
+}
+function info()
+{
+document.getElementById("infobck").style.backgroundColor= "rgba(192,192,192,0.1)";
+}
+</script>
+
+	</head>
+
+
+
+
+<body>
+	<div class="page-header">
+		<h1>Smart Trip <small> Holidays for FUN...</small></h1>
+	</div>
+	
+
+	
+<nav class="navbar navbar-default" role="navigation">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#"><span class="glyphicon glyphicon-home"> Smart Trip </span></a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      
+      <ul class="nav navbar-nav">
+        <li><a href="pro.html">Home</a></li>
+			<li class="active" ><a href="destination.php">Destination</a></li>        
+                
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Most Visited <b class="caret"></b></a>
+          <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+            <li><a href="forts.html">Forts</a></li>
+				<li><a href="hills.html">Hill Stations</a></li>            
+            <li><a href="beaches.html">Beaches</a></li>
+				   
+            
+          </ul>
+        </li>
+ 
+        <li><a ></a></li><li><a ></a></li><li><a ></a></li><li><a ></a></li><li><a ></a></li><li><a ></a></li><li><a ></a></li>        
+			<li><a ></a></li><li><a ></a></li>
+			<li><a ></a></li>			
+			<li ><a href="signup.php">Sign In / Sign Up</a></li>
+			
+  			<form class="navbar-form navbar-left " role="search">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+        <button type="submit" class="btn btn-default">Go</button>
+      </form>    
+         
+      </ul>
+      
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+<!.............................................................>
+
+<div id="templatemo_search">
+    
+    <div class="sarch_mid">
+      
+        <table id="radios">
+
+          <tr>
+
+<td width="175">
+
+	    <input type="radio" name="search" value="radio" onclick="if(this.checked){myFunction0()}" >  Hill Stations
+
+</td>
+<td width="175">
+            <input type="radio" name="search" value="radio" onclick="if(this.checked){myFunction1()}" id="search_1"/>  Forts
+</td>
+<td width="175">
+            <input type="radio" name="search" value="radio"  onclick="if(this.checked){myFunction2()}" id="search_2" />  Beaches
+</td>
+
+          </tr>
+</table>
+	<br><br><br>
+
+
+
+<table id="froto">        
+  <tr>
+            <td width="75">From:</td>
+            <td><label>
+              <select name="destination_from" id="destination_from">
+                <option>Pune</option>
+                <option>Mumbai</option>
+                <option>Nashik</option>
+                <option>Kolhapur</option>
+              </select>
+            </label></td>
+            <td width="100"></td>
+            <td width="75">To:</td>
+            <td><label>
+
+		<select name="destination_to" id="destination_to">
+                
+              </select>
+
+            </label></td>
+          </tr>
+</table>
+<table>	         
+          <tr><td>            
+ <input type="submit" name="sa" onclick="initialize()" value="Search" id="srch"/></td>
+          </tr>
+        </table>
+        
+      </div>
+   
+  </div>
+<div id="map_canvas"></div>
+
+<div id="infobck"></div>
+<div id="write"></div>
+<!================================================================================>
+ <div id="footer1" style="position: absolute; top:1300px; background-color: #d5d5d5; width: 100%;">
+ 	<div class="row" style="height: 60px">
+	   <div class="col-md-2 col-md-offset-1"><a href="contactus.html" ><h4><span class="glyphicon glyphicon-envelope"></span>  Contact Us</h4></a></div>
+	   <div class="col-md-2 "><a href="aboutus.html" ><h4><span class="glyphicon glyphicon-user"></span>  About Us</h4></a></div>
+	   <div class="col-md-3 "><h5><span class="glyphicon glyphicon-copyright-mark"></span>  Copyrights :Aniket Bino Tushar Gaurav</h5></div>
+		<div class="col-md-2 "><a href="" ><h4><img src="faceboo_icon.png" >  Facebook</h4></a></div>
+		<div class="col-md-2 "><a href="" ><h4><img  src="twitter_icon.png" >  Twitter</h4></a></div>   
+   </div>
+ </div>
+ 
+ 
+ 
+ <!-- JavaScript -->
+    <script src="js/jquery-1.10.2.js"></script>
+    <script src="js/bootstrap.js"></script>
+	<script src="js/bootstrap.min.js"></script>	
+	<script src="js/collapse.js"></script>
+	<script src="js/dropdown.js"></script>
+</body>
+</html>

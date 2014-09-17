@@ -1,0 +1,39 @@
+.navbox {
+	position: relative;
+	float: left;
+}
+
+ul.nav {
+	list-style: none;
+	display: block;
+	width: 400px;
+	position: relative;
+	top: 100px;
+	left: 100px;
+	padding: 60px 0 60px 0;
+	background: url(shad2.png) no-repeat;
+	-webkit-background-size: 50% 100%;
+}
+
+
+
+#p4 {
+	-webkit-transition: all 0.3s ease-out;
+	background: #00FF00 no-repeat;
+	color: #174867;
+	padding: 7px 15px 7px 15px;
+	-webkit-border-top-left-radius: 10px;
+ 	-webkit-border-bottom-left-radius: 10px;
+	-webkit-border-top-right-radius: 10px;
+ 	-webkit-border-bottom-right-radius: 10px;
+	width: 200px;
+	display: block;
+	text-decoration: none;
+	-webkit-box-shadow: 4px 4px 8px #888;
+}
+
+#p4:hover {
+	background: #ebebeb no-repeat;
+	color: #67a5cd;
+	padding: 7px 15px 7px 30px;
+}

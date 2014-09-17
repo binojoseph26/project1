@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<head>
+<style>
+
+#cse-search-box{
+position:absolute;
+top:0px;
+left:1050px;
+}
+
+#main{
+width:282px;
+height:130px;
+position:absolute;
+top:0px;
+left:480px;
+}
+
+p1{
+position:absolute;
+top:100px;
+left:0px;
+}
+
+p2{
+position:absolute;
+top:100px;
+left:160px;
+}
+
+p3{
+position:absolute;
+top:100px;
+left:320px;
+}
+
+p4{
+position:absolute;
+top:100px;
+left:762px;
+}
+
+p5{
+position:absolute;
+top:100px;
+left:922px;
+}
+
+p6{
+position:absolute;
+top:100px;
+left:1082px;
+}
+
+a:link,a:visited
+{
+display:block;
+font-weight:bold;
+color:#FFFFFF;
+background-color:#98bf21;
+width:160px;
+height:30px;
+text-align:center;
+text-decoration:none;
+}
+
+a:hover,a:active
+{
+color:#6A991A;
+}
+</style>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>MCUBE Solutions | CU3ER By Template World</title>
+<link href="css/styles.css" rel="stylesheet" type="text/css" media="all" />
+<link href="templatemo_style.css" rel="stylesheet" type="text/css" />
+
+<script>
+function myFunction0()
+{
+	
+	var x = document.getElementById("destination_to");
+ 
+	var option = document.createElement("option");
+          option.text = "Mahabaleshwar";
+          x.add(option, x.options[null]);
+
+var option = document.createElement("option");
+          option.text = "Pachgani";
+          x.add(option, x.options[null]);
+
+var option = document.createElement("option");
+          option.text = "Lonavala";
+          x.add(option, x.options[null]);
+}
+function myFunction1()
+{
+	
+	var x = document.getElementById("destination_to");
+ 
+	var option = document.createElement("option");
+          option.text = "Sinhagad";
+          x.add(option, x.options[null]);
+
+var option = document.createElement("option");
+          option.text = "Raigadh";
+          x.add(option, x.options[null]);
+}
+function myFunction2()
+{
+	
+	var x = document.getElementById("destination_to");
+ 
+	var option = document.createElement("option");
+          option.text = "Alibag";
+          x.add(option, x.options[null]);
+
+var option = document.createElement("option");
+          option.text = "Ganpatipule";
+          x.add(option, x.options[null]);
+}
+function myFunction3()
+{
+	
+	var x = document.getElementById("destination_to");
+ 
+	var option = document.createElement("option");
+          option.text = "Pune";
+          x.add(option, x.options[null]);
+
+var option = document.createElement("option");
+          option.text = "Mumbai";
+          x.add(option, x.options[null]);
+}
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+  
+<script>  
+function initialize() {
+
+var x = document.getElementById("destination_to").selectedIndex;
+var y = document.getElementById("destination_to").options;
+
+switch (y[x].text)
+  {
+  case "Pune":
+    var lat=18.5203;
+    var long=73.8567;
+    break;
+  case "Mumbai":
+    var lat=18.9750;
+    var long=72.8258;
+    break;
+  case "Mahabaleshwar":
+    var lat=18.5203;
+    var long=73.8567;
+    break;
+  case "Lonavala":
+    var lat=18.7481;
+    var long=73.4072;
+    break;
+  case "Pachgani":
+    var lat=18.5203;
+    var long=73.8567;
+    break;
+  case "Alibag":
+    var lat=18.6400;
+    var long=72.8800;
+    break;
+  case "Ganpatipule":
+    var lat=17.1448;
+    var long=73.2666;
+    break;
+  case "Sinhagad":
+    var lat=18.3657;
+    var long=73.7553;
+    break;
+  case "Raigadh":
+    var lat=18.2335;
+    var long=73.4406;
+    break;
+  }
+
+
+  var myLatlng = new google.maps.LatLng(lat,long);
+  var mapOptions = {
+    zoom: 10,
+    center: myLatlng
+  }
+  var map = new google.maps.Map(document.getElementById('map_canvas'), mapOptions);
+
+  var marker = new google.maps.Marker({
+      position: myLatlng,
+      map: map,
+      title: 'Hello World!'
+  });
+
+
+
+}
+</script>
+
+</head>
+
+<body>
+<div id="title">
+<img border="0" src="3.jpg" id="main">
+</div>
+
+<p1>
+<a href="destin.html" target="_blank">Destinations</a> 
+</p1>
+<p2>
+<a href="trans.html" target="_blank">Transport</a> 
+</p2>
+<p3>
+<a href="map.html" target="_blank">Map</a> 
+</p3>
+<p4>
+<a href="about.html" target="_blank">About us</a>
+</p4>
+<p5>
+<a href="start.html" target="_blank">Sign in</a>
+</p5>
+<p6>
+<a href="start.html" target="_blank">Contact us</a>
+</p6>
+
+<form id="cse-search-box" action="http://google.com/cse">
+  <input type="hidden" name="cx" value="YOUR SEARCH ENGINE ID goes here" />
+  <input type="hidden" name="ie" value="UTF-8" />
+  <input type="text" name="q" size="31" />
+  <input type="submit" name="sa" value="Search" />
+</form>
+<div id="content">
+ <div id="content_cen">
+  <div id="content_sup" class="head_pad">
+   <div id="welcom_pan">
+   
+    
+ <div id="templatemo_search">
+    
+    <div class="sarch_mid">
+      
+        <table id="radios">
+
+          <tr>
+
+<td width="175">
+
+	    <input type="radio" name="search" value="radio" onclick="if(this.checked){myFunction0()}" ><strong>  Hill Stations</strong>
+
+</td>
+<td width="175">
+            <input type="radio" name="search" value="radio" onclick="if(this.checked){myFunction1()}" id="search_1"/><strong>  Forts</strong>
+</td>
+<td width="175">
+            <input type="radio" name="search" value="radio"  onclick="if(this.checked){myFunction2()}" id="search_2" /><strong>  Beaches</strong>
+</td>
+<td width="175">
+            <input type="radio" name="search" value="radio"  onclick="if(this.checked){myFunction3()}" id="search_3" /><strong>  Others</strong>
+</td>
+
+          </tr>
+</table>
+	<br><br><br>
+
+
+
+<table id="froto">        
+  <tr>
+            <td width="75"><strong>From:</strong></td>
+            <td><label>
+              <select name="destination_from" id="destination_from">
+                <option>Pune</option>
+                <option>Mumbai</option>
+                <option>Nashik</option>
+                <option>Kolhapur</option>
+              </select>
+            </label></td>
+            <td width="100"></td>
+            <td width="75"><strong>To:</strong></td>
+            <td><label>
+
+		<select name="destination_to" id="destination_to">
+                
+              </select>
+
+            </label></td>
+          </tr>
+</table>
+<table>	         
+          <tr>            
+<td> <input type="submit" name="sa" onclick="initialize()" value="Search" id="srch"/></td>
+          </tr>
+        </table>
+        
+      </div>
+   
+  </div>
+</div>
+
+
+   </div>
+  </div>
+ </div>
+</div>
+<div id="map_canvas"></div>
+<!div id="infobck"></div>
+<div id="foot">
+ <div id="foot_cen">
+ <h6><a href="index.html">mcube</a></h6>
+ <ul>
+     <li><a href="index.html">Home</a></li>
+     <li class="space">|</li>
+     <li><a href="about.html">ABOUT</a></li>
+     <li class="space">|</li>
+     <li><a href="services.html">SERVICES</a></li>
+     <li class="space">|</li>
+     <li><a class="active" href="contact.html">CONTACT</a></li>
+    
+   </ul>
+ <p>© Your Copyright Info Here. Designed by: <a href="http://www.templateworld.com" target="_blank">Template World</a></p>
+ </div>
+</div>
+
+
+
+</body>
+</html>

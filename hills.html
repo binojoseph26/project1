@@ -1,0 +1,487 @@
+<html>
+<head>
+	<meta charset="utf-8">
+  
+	
+	
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+	<link href="css/button.css" rel="stylesheet">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+
+<!--=====================================================================================================-->
+
+<style type="text/css">
+#carousel {
+			
+        width: 1000px;
+        height: 400px;
+        overflow:hidden;
+    }
+
+    #carousel ul {
+        width: 2000px;
+        padding: 0;
+        margin: 0;
+    }
+
+    #carousel ul li {
+        width:1000px;
+        text-align: center;
+        height: 400px;
+        list-style: none;
+        float:  left;
+    }
+   .a
+   {
+		position: fixed;
+		top: 190px;
+		left: 170px;  
+   }
+   
+    
+#footer1
+{
+	
+	width: 100%; 
+}
+.container {
+  
+  max-width: 680px;
+  padding: 0 15px;
+}
+.container .text-muted {
+  margin: 20px 0;
+}
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js" type="text/javascript"><!--mce:0--></script>
+<script type="text/javascript">
+  	$(document).ready(function(){
+
+		$("#carousel ul").each(function(){
+			// Set the interval to be 10 seconds
+			var t = setInterval(function(){
+				$("#carousel ul").animate({marginLeft:-1000},1000,function(){
+					// This code runs after the animation completes
+					$(this).find("li:last").after($(this).find("li:first"));
+					// Now we've taken out the left-most list item, reset the margin
+					$(this).css({marginLeft:0});
+				})
+			},4000);
+		});
+	});
+  </script>
+<!--=====================================================================================================-->
+	</head>
+
+
+
+
+<body>
+	<div class="page-header">
+		<h1>Smart Trip <small> Holidays for FUN...</small></h1>
+	</div>
+	
+
+	
+<nav class="navbar navbar-default" role="navigation">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#"><span class="glyphicon glyphicon-home"> Smart Trip </span></a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      
+      <ul class="nav navbar-nav">
+        <li><a href="pro.html">Home</a></li>
+			<li ><a href="destination.php">Destination</a></li>        
+        
+        
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Most Visited <b class="caret"></b></a>
+          <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+            <li><a href="forts.html">Forts</a></li>
+				<li><a href="hills.html">Hill Stations</a></li>            
+            <li><a href="beaches.html">Beaches</a></li>
+				   
+            
+          </ul>
+        </li>
+ 
+        <li><a ></a></li><li><a ></a></li><li><a ></a></li><li><a ></a></li><li><a ></a></li><li><a ></a></li><li><a ></a></li>        
+			<li><a ></a></li><li><a ></a></li>
+			<li><a ></a></li>			
+			<li ><a href="signup.php">Sign In / Sign Up</a></li>
+			
+  			<form class="navbar-form navbar-left " role="search">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+        <button type="submit" class="btn btn-default">Go</button>
+      </form>    
+         
+      </ul>
+      
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+
+<h3 class="text-success">Hill Stations</h3>
+ <tr>
+    <td align="left" valign="top"><table width="100%" border="0" cellpadding="0" cellspacing="0" >
+        <tr align="left" valign="top">
+          <td height="100%">            <table width="100%" border="0" cellspacing="4" cellpadding="4">
+              
+              <tr> 
+                <td style="text-align:Center" valign="top"><img src="HillStations_maharashtra.jpg" alt="Hillstations of Maharashtra"
+                              width="1350" height="400"></td>
+              </tr>
+              <tr>
+                <td align="left" valign="top">The geography of Maharashtra shows evidence of a divine hand. Running north to 
+                            south, throughout its length are the steeply rising Western Ghats. The 
+                            foothills sometimes approaching the seashore and sometimes withdrawing 40 or 50 
+        kms away seem to be playing an eternal game with the Arabian Sea.</td>
+              </tr>
+              <tr>
+                <td height="8" align="left" valign="top"></td>
+              </tr>
+              <tr>
+                <td align="left" valign="top">Nestling shyly in these mountains, some at an altitude of 2000 metres, are the 
+                            hill stations of Maharashtra. These towns offer clean, calm and a thoroughly 
+                            refreshing alternative to city life. They are probably the only places in India 
+                            where you can observe the fall of the land all the way to the shimmering sea. 
+                            Mumbai, India's commercial capital, and easily the most accessible city in this 
+                            country, is the perfect gateway to Maharashtra's hill country, with convenient 
+        and comfortable links by road, rail, and air. </td>
+              </tr>
+              <tr>
+                <td align="left" valign="top">&nbsp;</td>
+              </tr>
+              <tr>
+                <td align="left" valign="top" width="1" background="/mtdc/HTML/Maharashtratourism/images/DotsV.jpg"></td>
+              </tr>
+              <tr>
+                <td align="left" valign="top"><table width="100%" border="0" cellspacing="2" cellpadding="2">
+                  <tr>
+                    <td align="left" valign="top"><table width="100%" border="0" cellspacing="2" cellpadding="2">
+                      <tr>
+                        <td width="21%" style="text-align:center" valign="top"><img src="mahabaleshwar_hillspot.jpg" alt="Mahabaleshwar Hill Stations" width="120" height="71"></td>
+                        <td width="79%" align="left" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                          <tr>
+                            <td height="1" align="left" valign="top" background="/mtdc/HTML/maharashtratourism/images/DotsV.jpg"></td>
+                          </tr>
+                          <tr>
+                            <td align="left" valign="top"><table width="100%" border="0" cellspacing="2" cellpadding="2">
+                              <tr>
+                                <td class="medium"><b>Mahabaleshwar Hill Station</b> </td>
+                              </tr>
+                              <tr>
+                                <td>Boating or fishing at the placid Venna Lake at Mahabaleshwar, you find the time   and the environment to put your life and priorities 
+                                  Soaring peaks, breathtaking valleys.  Lush flora.  Cool, crisp mountain air.  This is Mahabaleshwar, Maharashtra’s most popular hill station, and once the summer capital of the Bombay Presidency during the British Raj.
+Mahabaleshwar means ‘God of Great Power’ in Sanskrit.  Indeed, the place is great and bountiful, rewarding the visitor with a mix of old-world charm, natural beauty and modernity.<br><br><br> </td>
+                              </tr>
+                            </table></td>
+                          </tr>
+                        </table></td>
+                      </tr>
+                    </table></td>
+                  </tr>
+                  <tr>
+                    <td align="left" valign="top"><table width="100%" border="0" cellspacing="2" cellpadding="2">
+                      <tr>
+                        <td width="21%" style="text-align:center" valign="top"><img src="Matheran.jpg" alt="Matheran Hill Stations" width="120" height="71" border="0"></td>
+                        <td width="79%" align="left" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                              <td height="1" align="left" valign="top" background="/mtdc/HTML/maharashtratourism/images/DotsV.jpg"></td>
+                            </tr>
+                            <tr>
+                              <td align="left" valign="top"><table width="100%" border="0" cellspacing="2" cellpadding="2">
+                                  <tr>
+                                    <td class="medium"><b>Matheran Hill Station</b></td>
+                                  </tr>
+                                  <tr>
+                                    <td> Your toy train chugs along slowly without a care in the world. During the two hour ascent, food vendors and monkeys jump on and off as the valley glides by sedately.
+Sprawling languidly at an altitude of 800 metres is Matheran - an undulating hilltop cloaked in green.
+The cliffs of Matheran with incredibly steep drops to the plains below offer stunning viewing points. These panoramic vistas, by day and night, leave you feeling light headed. Standing at Hart Point in pitch darkness you get a breathtaking glimpse of the lights of busy Bombay. Matheran abounds in such quixotically named points. popular sites for picnics and fireside revelry.<br><br><br></td>
+                                  </tr>
+                              </table></td>
+                            </tr>
+                        </table></td>
+                      </tr>
+                    </table></td>
+                  </tr>
+                  <tr>
+                    <td align="left" valign="top"><table width="100%" border="0" cellspacing="2" cellpadding="2">
+                      <tr>
+                        <td width="21%" style="text-align:center" valign="top"><img src="bhandardara.jpg" alt="Bhandardara Hill Stations" width="120" height="71" border="0"></td>
+                        <td width="79%" align="left" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                              <td height="1" align="left" valign="top" background="/mtdc/HTML/maharashtratourism/images/DotsV.jpg"></td>
+                            </tr>
+                            <tr>
+                              <td align="left" valign="top"><table width="100%" border="0" cellspacing="2" cellpadding="2">
+                                  <tr>
+                                    <td class="medium"><b>Bhandardara Hill Station</b></td>
+                                  </tr>
+                                  <tr>
+                                    <td>Nestled among the Sahyadri Hills, Bhandardara has all the makings of a beautiful holiday resort.  Sky-high mountains, roaring waterfalls and lush greenery throughout the year, attract tourists from all over.
+To reach Bhandardara, detrain at Igatpuri.  If you are traveling by road from Mumbai, you need to turn right just a few kilometers after Igatpuri and enter Ghoti.  This small town leads to a long narrow road, which cuts across the lofty mountains and ascends to the marvelous retreat.  Although it is just about an hour’s journey, the sights are spectacular.  Fluorescent green paddy fields contrast with bright blue skies above and the murky brown streams that crisscross the whole land.  When it rains, and clouds descend from the sky to blanket the earth, the sight is truly breathtaking!<br><br><br> </td>
+                                  </tr>
+                              </table></td>
+                            </tr>
+                        </table></td>
+                      </tr>
+                    </table></td>
+                  </tr>
+                  <tr>
+                    <td align="left" valign="top"><table width="100%" border="0" cellspacing="2" cellpadding="2">
+                      <tr>
+                        <td width="21%" style="text-align:center" valign="top"><img src="chikhaldara_hills.jpg" alt="Chikhaldara Hill Stations" width="120" height="71" border="0"></td>
+                        <td width="79%" align="left" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                              <td height="1" align="left" valign="top" background="/mtdc/HTML/maharashtratourism/images/DotsV.jpg"></td>
+                            </tr>
+                            <tr>
+                              <td align="left" valign="top"><table width="100%" border="0" cellspacing="2" cellpadding="2">
+                                  <tr>
+                                    <td class="medium"><b>chikhaldara Hill Station</b></td>
+                                  </tr>
+                                  <tr>
+                                    <td>Featured in the epic, the Mahabharata, this is the place where Bheema killed the villainous Keechaka in a herculean bout and then threw him into the valley. It thus came to be known as Keechakadara -- Chikhaldara is its corruption. But there's more to Chikhaldara. The sole hill resort in the Vidarbha region, it is situated at an altitude of 1118 m and has the added dimension of being the only coffee-growing area in Maharashtra. It abounds in wildlife -- panthers, sloth bears, sambar, wild boar, and even the rarely seen wild dogs. Close by is the famous Melghat Tiger Project which has 82 tigers. The scenic beauty of Chikhaldara can be enjoyed from Hurricane Point, Prospect Point, and Devi Point. Other interesting excursions include Gavilgad and Narnala Fort, the Pandit Nehru Botanical Gardens, the Tribal Museum and the Semadoh Lake.<br><br><br>  </td>
+                                  </tr>
+                              </table></td>
+                            </tr>
+                        </table></td>
+                      </tr>
+                    </table></td>
+                  </tr>
+                  <tr>
+                    <td align="left" valign="top"><table width="100%" border="0" cellspacing="2" cellpadding="2">
+                      <tr>
+                        <td width="21%" style="text-align:center" valign="top"><img src="malshej_ghat_hilstation.jpg" alt="Malshej Ghat Hill Stations " width="120" height="71" border="0"></td>
+                        <td width="79%" align="left" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                              <td height="1" align="left" valign="top" background="/mtdc/HTML/maharashtratourism/images/DotsV.jpg"></td>
+                            </tr>
+                            <tr>
+                              <td align="left" valign="top"><table width="100%" border="0" cellspacing="2" cellpadding="2">
+                                  <tr>
+                                    <td class="medium"><b>Malshej Ghat Hill Station</b></td>
+                                  </tr>
+                                  <tr>
+                                    <td>Malshej Ghat holds special value for hikers, trekkers and adventure lovers. The nature here is at its best. No wonder then that the most exotic migratory flamingoes choose it as their monsoon abode. Close at hand is Shivneri Fort (approx 40 kms.)., birthplace of the legendary Shivaji. The unusual hill has Buddhist Caves dating to the 3 rd century and is surmounted by an important historic fort.<br><br><br> </td>
+                                  </tr>
+                              </table></td>
+                            </tr>
+                        </table></td>
+                      </tr>
+                    </table></td>
+                  </tr>
+                  <tr>
+                    <td align="left" valign="top"><table width="100%" border="0" cellspacing="2" cellpadding="2">
+                      <tr>
+                        <td width="21%" style="text-align:center" valign="top"><img src="panchgani_hillstation.jpg" alt="Mahabaleshwar Hill Stations" width="120" height="71" border="0"></td>
+                        <td width="79%" align="left" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                              <td height="1" align="left" valign="top" background="/mtdc/HTML/maharashtratourism/images/DotsV.jpg"></td>
+                            </tr>
+                            <tr>
+                              <td align="left" valign="top"><table width="100%" border="0" cellspacing="2" cellpadding="2">
+                                  <tr>
+                                    <td class="medium"><b>Panchgani Hill Station</b></td>
+                                  </tr>
+                                  <tr>
+                                    <td>In nearby Panchgani - which derives its name from the five hills that surround it - you set out on one of the special visits arranged by MTDC for a peep into the past. and some old British and Parsi homes.
+Then you amble along the walkways thickly canopied by lush trees and vegetation and delight in the secrets you stumble upon. The Krishna snakes through tiny hamlets, farms and ravines hundreds of metres below. From Table Land, a flat mountain top, you look down in wonder at the coastal plains.<br><br><br>  </td>
+                                  </tr>
+                              </table></td>
+                            </tr>
+                        </table></td>
+                      </tr>
+                    </table></td>
+                  </tr>
+                  <tr>
+                    <td align="left" valign="top"><table width="100%" border="0" cellspacing="2" cellpadding="2">
+                      <tr>
+                        <td width="21%" style="text-align:center" valign="top"><img src="jawhar_hillstation.jpg" alt="Jawhar Hill Station" width="120" height="71" border="0"></td>
+                        <td width="79%" align="left" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                              <td height="1" align="left" valign="top" background="/mtdc/HTML/maharashtratourism/images/DotsV.jpg"></td>
+                            </tr>
+                            <tr>
+                              <td align="left" valign="top"><table width="100%" border="0" cellspacing="2" cellpadding="2">
+                                  <tr>
+                                    <td class="medium"><b>Jawhar Hill Station</b> </td>
+                                  </tr>
+                                  <tr>
+                                    <td>Not for nothing is it named the 'Mahabaleshwar of Thane district,. In beauty and climate it is no less. And there's so much to see the majestic Dadara Kopra Falls, Jai Vilas, the palace of the tribal kings, the Hanuman and Sunset Points and the enthralling Shirpamal, where Shivaji chose to camp on way to Surat.
+
+Jawahar also offers you the unique opportunity to expose and enlighten yourself with the tribal way of life especially with the Warli paintings.<br><br><br>
+                                     </td>
+                                  </tr>
+                              </table></td>
+                            </tr>
+                        </table></td>
+                      </tr>
+                    </table></td>
+                  </tr>
+                  <tr>
+                    <td align="left" valign="top"><table width="100%" border="0" cellspacing="2" cellpadding="2">
+                      <tr>
+                        <td width="21%" style="text-align:center" valign="top"><img src="amboli.jpg" alt="Amboli Hill Stations" width="120" height="71" border="0"></td>
+                        <td width="79%" align="left" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                              <td height="1" align="left" valign="top" background="/mtdc/HTML/maharashtratourism/images/DotsV.jpg"></td>
+                            </tr>
+                            <tr>
+                              <td align="left" valign="top"><table width="100%" border="0" cellspacing="2" cellpadding="2">
+                                  <tr>
+                                    <td class="medium"><b>Amboli Hill Stations</b> </td>
+                                  </tr>
+                                  <tr>
+                                    <td>Snuggling coyly, in the southern ranges of the Sahyadri hills, Amboli at an altitude of 690 m is the last mountain resort before the coastal highlands settle, with a sigh, to form flat beaches. Visit numerous view points for a pleasant view of the lush hills and fertile plain. Seaview Point offers a rare view of the land all the way to the golden Konkan coast. You can spend hours angling for a fish at Hiranya Keshi or picnic at Nagatta Falls, Mahadev Gad and Narayan Gad. For a few days of isolation, Amboli is an ideal resort.<br><br><br></td>
+                                  </tr>
+                              </table></td>
+                            </tr>
+                        </table></td>
+                      </tr>
+                    </table></td>
+                  </tr>
+                  <tr>
+                    <td align="left" valign="top"><table width="100%" border="0" cellspacing="2" cellpadding="2">
+                      <tr>
+                        <td width="21%" style="text-align:center" valign="top"><img src="panhala_hillstation.jpg" alt="Panhala Hill Stations" width="120" height="71" border="0"></td>
+                        <td width="79%" align="left" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                              <td height="1" align="left" valign="top" background="/mtdc/HTML/maharashtratourism/images/DotsV.jpg"></td>
+                            </tr>
+                            <tr>
+                              <td align="left" valign="top"><table width="100%" border="0" cellspacing="2" cellpadding="2">
+                                  <tr>
+                                    <td class="medium"><b>Panhala Hill Stations</b> </td>
+                                  </tr>
+                                  <tr>
+                                    <td>The history of Panhala is also the history of Marathas. There are innumerable places of interest , each with its share of haunting anecdotes. Sajja Kothi, where Sambhaji was imprisoned. Ambabai Temple, where Shivaji used to seek blessings before venturing on expeditions. Pavankhind, where Baji Prabhu laid down his life to cover Shivaji's escape. In addition to history, Panhala at an altitude of 977 m offers some inspiring scenery and a soothing climate.<br><br><br>    </td>
+                                  </tr>
+                              </table></td>
+                            </tr>
+                        </table></td>
+                      </tr>
+                    </table></td>
+                  </tr>
+                  <tr>
+                    <td align="left" valign="top" bgcolor="#FFFFFF"><table width="100%" border="0" cellspacing="2" cellpadding="2">
+                      <tr>
+                        <td width="21%" style="text-align:center" valign="top"><img src="Khandala_Lonavala_Karla.jpg" alt="Khandala Lonavala Karla Hill Stations" width="120" height="71" border="0"></td>
+                        <td width="79%" align="left" valign="top" bgcolor="#FFFFFF"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                              <td height="1" align="left" valign="top" background="/mtdc/HTML/maharashtratourism/images/DotsV.jpg"></td>
+                            </tr>
+                            <tr>
+                              <td align="left" valign="top"><table width="100%" border="0" cellspacing="2" cellpadding="2">
+                                  <tr>
+                                    <td class="medium"><b>Khandala Lonavala Karla Hill Station</b></td>
+                                  </tr>
+                                  <tr>
+                                    <td>The twin hill resorts of Khandala and Lonavala have a special attraction for the Mumbai crowd seeking a convenient weekend holiday in the hills.
+A mere 3 hours by road from Mumbai, beautifully landscaped Lonavala and Khandala are famous for their seemingly innumerable varieties of chikki.  But they also offer many sites worth visiting.  Trekking is a good way to get around, but having a vehicle (even a bicycle) is still better, as some points of interest are quite some distance from the main towns.
+Other attractions: Bhushi Dam, Valvan Dam, Kaivalyadhama Yoga Hospital, Duke’s Nose, Ryewood Park, Tiger’s Leap<br><br><br> </td>
+                                  </tr>
+                              </table></td>
+                            </tr>
+                        </table></td>
+                      </tr>
+                    </table></td>
+                  </tr>
+                  <tr>
+                    <td><table width="100%" border="0" cellspacing="2" cellpadding="2">
+                      <tr>
+                        <td width="21%" style="text-align:center" valign="top"><img src="toranamal_hillstation.jpg" alt="Toranamal Hill Stations" width="120" height="71" border="0"></td>
+                        <td width="79%" align="left" valign="top" bgcolor="#FFFFFF"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                              <td height="1" align="left" valign="top" background="/mtdc/HTML/maharashtratourism/images/DotsV.jpg"></td>
+                            </tr>
+                            <tr>
+                              <td align="left" valign="top"><table width="100%" border="0" cellspacing="2" cellpadding="2">
+                                  <tr>
+                                    <td class="medium"><b>Toranamal Hill Station</b></td>
+                                  </tr>
+                                  <tr>
+                                    <td>Tucked away in the Satpuda Mountains at an altitude of 1461 m., Toranmal is one of the most peaceful places on earth. And when you are tired of plain lazing, you could visit the beautiful Yashwant Lake, Seetha khali or any of the charming temples of olden days.<br><br><br>  </td>
+                                  </tr>
+                              </table></td>
+                            </tr>
+                        </table></td>
+                      </tr>
+                    </table></td>
+                  </tr>
+                  <br><br>
+                  <tr>
+                    <td align="left" valign="top" bgcolor="#FFFFFF"><table width="100%" border="0" cellspacing="2" cellpadding="2">
+                      <tr>
+                        <td width="21%" style="text-align:center" valign="top"><img src="VajraiWaterfallsmall.jpg" alt="Vajrai Waterfall" width="120" height="71" border="1"></td>
+                        <td width="79%" align="left" valign="top" bgcolor="#FFFFFF"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                              <td height="1" align="left" valign="top" background="/mtdc/HTML/maharashtratourism/images/DotsV.jpg"></td>
+                            </tr>
+                            <tr>
+                              <td align="left" valign="top"><table width="100%" border="0" cellspacing="2" cellpadding="2">
+                                  <tr>
+                                    <td class="medium"><b>Vajrai Waterfalls</b></td>
+                                  </tr>
+                                  <tr>
+                                    <td>Bhambavli Vajrai Waterfall is the tallest waterfall of India. The height of this waterfall is 1840 feet and it falls from a straight cliff. The water for waterfall comes from the river Urmodi. It is origin of river Urmodi.
+The waterfall is situated in district of Satara in western Maharashtra. It is about 5 km away from Kas Flower Valley. The lush green mountains and the flowers in nearby flower valley please your senses. The pleasant weather actually relaxes you like anything. But the star attraction of this place is tranquility. The place is simply deserted and there are no hawkers, unwanted guides and cameramen to disturb you. The waterfall is perennial in nature and hence you will hardly find any day when it's gone dry (flows 12 months in a year).<br><br><br>
+                                     </td>
+                                  </tr>
+                              </table></td>
+                            </tr>
+                        </table></td>
+                      </tr>
+                    </table></td>
+                  </tr>
+                </table></td>
+              </tr>
+              <tr>
+                 <td align="left" valign="top" width="1" background="/mtdc/HTML/Maharashtratourism/images/DotsV.jpg"></td>
+              </tr>
+              <tr>
+                <td align="left" valign="top">&nbsp;</td>
+              </tr>
+            </table></td>
+        </tr>
+      </table></td>
+  </tr>
+</table>
+
+
+<!================================================================================>
+ <div id="footer1" style="position: absolute; top: 2450px; background-color: #d5d5d5; width: 100%;">
+ 	<div class="row" style="height: 60px">
+	   <div class="col-md-2 col-md-offset-1"><a href="contactus.html" ><h4><span class="glyphicon glyphicon-envelope"></span>  Contact Us</h4></a></div>
+	   <div class="col-md-2 "><a href="aboutus.html" ><h4><span class="glyphicon glyphicon-user"></span>  About Us</h4></a></div>
+	   <div class="col-md-3 "><h5><span class="glyphicon glyphicon-copyright-mark"></span>  Copyrights :Aniket Bino Tushar Gaurav</h5></div>
+		<div class="col-md-2 "><a href="" ><h4><img src="faceboo_icon.png" >  Facebook</h4></a></div>
+		<div class="col-md-2 "><a href="" ><h4><img  src="twitter_icon.png" >  Twitter</h4></a></div>   
+   </div>
+ </div>
+ 
+ 
+ 
+ <!-- JavaScript -->
+    <script src="js/jquery-1.10.2.js"></script>
+    <script src="js/bootstrap.js"></script>
+	<script src="js/bootstrap.min.js"></script>	
+	<script src="js/collapse.js"></script>
+	<script src="js/dropdown.js"></script>
+</body>
+</html>
